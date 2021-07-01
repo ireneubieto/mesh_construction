@@ -14,11 +14,11 @@ import {
     BufferAttribute,
     Mesh,
     SphereGeometry
-} from '/mesh_construction/three.js/build/three.module.js';
-import { GUI } from '/mesh_construction/three.js/examples/jsm/libs/dat.gui.module.js';
-import { OrbitControls } from '/mesh_construction/three.js/examples/jsm/controls/OrbitControls.js';
-import { GLTFLoader } from '/mesh_construction/three.js/examples/jsm/loaders/GLTFLoader.js';
-import { GLTFExporter } from '/mesh_construction/three.js/examples/jsm/exporters/GLTFExporter.js';
+} from '/meshconstruction/three.js/build/three.module.js';
+import { GUI } from '/meshconstruction/three.js/examples/jsm/libs/dat.gui.module.js';
+import { OrbitControls } from '/meshconstruction/three.js/examples/jsm/controls/OrbitControls.js';
+import { GLTFLoader } from '/meshconstruction/three.js/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFExporter } from '/meshconstruction/three.js/examples/jsm/exporters/GLTFExporter.js';
 
 var gui, scene, camera, renderer, orbit, lights;
 var face, bones, skeleton;
