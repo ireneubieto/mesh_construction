@@ -1,6 +1,6 @@
 import {
     Vector3
-} from './three.js/build/three.module.js';
+} from '/mesh_construction/three.js/build/three.module.js';
 
 let face_model;
 let webcam
@@ -14,7 +14,7 @@ import {
     setTargets,
     edit,
     downloadModel
-} from './application.js';
+} from '/mesh_construction/application.js';
 
 import {
     adjust,
@@ -22,7 +22,7 @@ import {
     makeAdjustMesh,
     getFinalMesh,
     stopRendering
-} from './adjust.js';
+} from '/mesh_construction/adjust.js';
 
 function sendVertex(){
     var trackedVertex = [];
