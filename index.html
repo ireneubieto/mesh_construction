@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/facemesh"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <title>3D Face Mesh</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="cam-area" id="cam-area">
+            <video autoplay playsinline muted id="webcam"  width="500" height="500"></video>
+            <button class="btn btn-info" id="capture">Capture</button>
+        </div>
+        <div class="edit-area" id="edit-area" style="display:none;">
+            <button class="btn btn-info" id="adjust-btn" style="display: none;">Next</button>
+            <button class="btn btn-info" id="edit-btn" style="display: none;">Edit</button>
+            <button class="btn btn-info" id="download-btn" style="display: none;">Download</button>
+        </div>
+        <div class="ajust-area" id="adjust" style="width: 50%; height: 100%; background-color: #444444;">
+        </div>
+        <div class="mesh-area" id="canvas" style="width: 50%; height: 100%; background-color: #444444; display: none">
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script type="module" src="tracking.js"></script>
+</body>
+
+</html>
