@@ -1,6 +1,6 @@
 import {
     Vector3
-} from 'three.js/build/three.module.js';
+} from './three.js/build/three.module.js';
 
 let face_model;
 let webcam
