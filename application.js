@@ -83,7 +83,7 @@ export function initScene() {
     }, false );
 
     const loader = new GLTFLoader();
-	loader.load( "/face.glb", function ( gltf ) {
+	loader.load( "/meshconstruction/face.glb", function ( gltf ) {
         loadFace(gltf);
         //orderTargets();
 
