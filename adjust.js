@@ -13,10 +13,10 @@ import {
     SkinnedMesh,
     Skeleton,
     Mesh
-} from './three.js/build/three.module.js';
-import { OrbitControls } from './three.js/examples/jsm/controls/OrbitControls.js';
-import { GUI } from './three.js/examples/jsm/libs/dat.gui.module.js';
-import { GLTFLoader } from ':/three.js/examples/jsm/loaders/GLTFLoader.js';
+} from '/mesh_construction/three.js/build/three.module.js';
+import { OrbitControls } from '/mesh_construction/three.js/examples/jsm/controls/OrbitControls.js';
+import { GUI } from '/mesh_construction/three.js/examples/jsm/libs/dat.gui.module.js';
+import { GLTFLoader } from '/mesh_construction/three.js/examples/jsm/loaders/GLTFLoader.js';
 
 let renderer, scene, camera, gui, folder, orbit;
 var trackedMesh;
