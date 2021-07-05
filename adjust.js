@@ -13,10 +13,10 @@ import {
     SkinnedMesh,
     Skeleton,
     Mesh
-} from './three.js/build/three.module.js';
-import { OrbitControls } from './three.js/examples/jsm/controls/OrbitControls.js';
-import { GUI } from './three.js/examples/jsm/libs/dat.gui.module.js';
-import { GLTFLoader } from './three.js/examples/jsm/loaders/GLTFLoader.js';
+} from '/meshconstruction/three.js/build/three.module.js';
+import { OrbitControls } from '/meshconstruction/three.js/examples/jsm/controls/OrbitControls.js';
+import { GUI } from '/meshconstruction/three.js/examples/jsm/libs/dat.gui.module.js';
+import { GLTFLoader } from '/meshconstruction/three.js/examples/jsm/loaders/GLTFLoader.js';
 
 let renderer, scene, camera, gui, folder, orbit;
 var trackedMesh;
@@ -73,7 +73,7 @@ export function initAdjustScene() {
     }, false );
 
     const loader = new GLTFLoader();
-	loader.load( "/face2.glb", function ( gltf ) {
+	loader.load( "/face.glb", function ( gltf ) {
         loadFace(gltf);
         scene.add(trackedMesh);
         setupDatGui();
